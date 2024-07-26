@@ -1,7 +1,21 @@
+/* roomlist.component.css */
 .container {
+  margin-top: 35px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* ระยะห่างระหว่างการ์ด */
+}
+
+.card {
+  flex: 1 1 calc(50% - 16px); /* กำหนดความกว้างของการ์ดเป็น 20% ของความกว้างทั้งหมดของ container, ลบระยะห่าง */
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  height: 35vh;
+  box-shadow: 0 0 5px rgb(255, 217, 0);
+  text-align: center;
   align-items: center;
   justify-content: center;
-  vertical-align: middle;
-  height: 20vh;
 }
